@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý đào tạo</title>
+    <link rel="stylesheet" href="../css/dangky.css">
+</head>
+<body>
+    <div class="container-left">
+        <section class="header">
+            <div class="nav-links">
+                <a href="#" class="btn-link"><button>LMS</button></a>
+                <a href="#" class="btn-link"><button>Thư viện số</button></a>
+                <a href="#" class="btn-link"><button>Cổng thực hành</button></a>
+                <a href="#" class="btn-link"><button>Quy chế</button></a>
+                <a href="#" class="btn-link"><button>Thông báo</button></a>
+                <a href="#" class="btn-link"><button>Biểu mẫu - Hướng dẫn</button></a>
+                <a href="#" class="btn-link"><button>Học phí</button></a>
+            </div>
+
+            <div class="nick">
+                <img class="img-nick" src="../img/icon-nick.png" alt="Avatar">
+                <div class="nick-name">
+                    <span class="studentName">Nguyễn Tuấn Minh</span>
+                    <span class="studentCode">B25DTCN188</span>
+                </div>
+                <span class="icons">▼</span>
+            </div>
+
+            <div class="user-dropdown" id="userDropdown">
+                <p class="studentNameDropdown"></p>
+                <p class="studentCodeDropdown"></p>
+            </div>
+        </section>
+        
+        <!-- box-left -->
+        <section class="box-left">
+                <a href="/html/trangchu.html" class="page-link"><div class="content-main">
+                    <span class="content">Trang chủ</span>
+                </div></a>
+
+            <!-- Phần khi Log-in -->
+            <nav class="sidebar-menu" id="sidebar-menu" style="display:block">
+                <ul>
+                    <li class="thongbao"><a href="/html/thongbao.html" >Thông báo từ ban quản trị</a></li>
+                    <li class="dangky"><a href="/html/dangky.html" >Đăng ký môn học</a></li>
+                    <li class="hocphi"><a href="/html/hocphi.html" >Xem học phí</a></li>
+                    <li><a href="">Hóa đơn điện tử</a></li>
+                    <li><a href="">Thời khóa biểu dạng tuần</a></li>
+                    <li><a href="">Thời khóa biểu dạng học kỳ</a></li>
+                    <li><a href="">Xem lịch thi</a></li>
+                    <li><a href="/html/xemdiem.html" >Xem điểm</a></li>
+                    <li><a href="">Gửi ý kiến</a></li>
+                </ul>
+            </nav>
+
+            <div class="box-footer">
+                <img class="img-pttc" src="../img/pttc.png">
+                <p>VTT1-V 2026.03D.00</p>
+                <p>Design by <a href="https://aqtech.edu.vn/" class="link-aqtech">aqtech.vn</a></p>
+            </div>
+        </section>
+    </div>
+
+    <div class="box-left-login">
+
+    </div>
+    
+
+    <!-- CONTAINER RIGHT -->
+    <div class="container-right">
+        
+        <div class="registration-box">
+            <div class="reg-header">
+                <i class="fa-solid fa-gear"></i> ĐĂNG KÝ MÔN HỌC HỌC KỲ 2 - NĂM HỌC 2025 - 2026
+            </div>
+
+            <div class="reg-content">
+                <div class="reg-select-wrapper">
+                    <select class="reg-select">
+                        <option>Môn học mở theo lớp sinh viên D25TXCN07-B</option>
+                    </select>
+                </div>
+
+                <div class="table-container">
+                    <h3>Danh sách môn học mở cho đăng ký</h3>
+                    <div class="table-wrapper">
+                        <table class="course-table">
+                            <thead>
+                                <tr>
+                                    <th style="width: 40px;"></th>
+                                    <th>Mã MH <i class="fa-solid fa-sort"></i></th>
+                                    <th>Tên môn học</th>
+                                    <th>Nhóm</th>
+                                    <th>Tổ</th>
+                                    <th>Số TC</th>
+                                    <th>Số lượng</th>
+                                    <th>Còn lại</th>
+                                    <th>Thời khóa biểu</th>
+                                </tr>
+                                <tr class="filter-row">
+                                    <td></td>
+                                    <td><input type="text" placeholder="..."></td>
+                                    <td><input type="text" placeholder="..."></td>
+                                    <td><input type="text" placeholder="..."></td>
+                                    <td><input type="text" placeholder="..."></td>
+                                    <td><input type="text" placeholder="..."></td>
+                                    <td><input type="text" placeholder="..."></td>
+                                    <td><input type="text" placeholder="..."></td>
+                                    <td><input type="text" placeholder="..."></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- DANH SÁCH CÁC MÔN HỌC -->
+                                <tr>
+                                    <td><input type="checkbox" checked></td>
+                                    <td>BAS1142</td>
+                                    <td>Tiếng Anh A12</td>
+                                    <td>06</td>
+                                    <td></td>
+                                    <td>4</td>
+                                    <td>75</td>
+                                    <td>0</td>
+                                    <td>Thứ 5, tiết 13->15,Ph lopmonhoc25,19/03/26 đến 23/4/26</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" checked></td>
+                                    <td>INT1313</td>
+                                    <td>Cơ sở dữ liệu</td>
+                                    <td>05</td>
+                                    <td></td>
+                                    <td>3</td>
+                                    <td>82</td>
+                                    <td>0</td>
+                                    <td>Thứ 7, tiết 7->10, Ph lopmonhoc21, 16/05/26 đến 23/05/26</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" checked></td>
+                                    <td>INT13162</td>
+                                    <td>Lập trình với Python</td>
+                                    <td>07</td>
+                                    <td></td>
+                                    <td>3</td>
+                                    <td>80</td>
+                                    <td>0</td>
+                                    <td>Thứ 7, tiết 1->4, Ph lopmonhoc21, 16/05/26 đến 30/05/26</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" checked></td>
+                                    <td>INT1340</td>
+                                    <td>Nhập môn công nghệ phần mềm</td>
+                                    <td>07</td>
+                                    <td></td>
+                                    <td>3</td>
+                                    <td>80</td>
+                                    <td>0</td>
+                                    <td>Thứ 7, tiết 1->4, Ph lopmonhoc16, 18/04/26 đến 23/05/26</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" checked></td>
+                                    <td>INT1450</td>
+                                    <td>Quản lý dự án phần mềm</td>
+                                    <td>06</td>
+                                    <td></td>
+                                    <td>2</td>
+                                    <td>80</td>
+                                    <td>0</td>
+                                    <td>Thứ 7, tiết 7->10, Ph lopmonhoc16, 09/05/26 đến 23/05/26</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+<!-- ------------------------------------------------------------- -->
+                    <br><br>
+                    <!-- Bảng 2 -->
+                     <h3>Danh sách môn học đã đăng ký: <span class="dangky-course">6 môn, 22.5 tín chỉ</span></h3>
+                     <div class="table-wrapper">
+                        <table class="course-table">
+                            <thead>
+                                <tr>
+                                    <th style="width: 40px;">Xóa</th>
+                                    <th>Mã MH <i class="fa-solid fa-sort"></i></th>
+                                    <th>Tên môn học</th>
+                                    <th>Nhóm tổ</th>
+                                    <th>Số TC</th>
+                                    <th>Lớp</th>
+                                    <th>Ngày đăng ký</th>
+                                    <th>Trạng thái</th>
+                                    <th>Thời khóa biểu</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- DANH SÁCH CÁC MÔN HỌC -->
+                                <tr>
+                                    <td style="font-weight: 900;">X</td>
+                                    <td>BAS1142</td>
+                                    <td>Tiếng Anh A12</td>
+                                    <td>6</td>
+                                    <td>4</td>
+                                    <td></td>
+                                    <td>25/12/2025 12:54:24</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-weight: 900;">X</td>
+                                    <td>INT1313</td>
+                                    <td>Cơ sở dữ liệu</td>
+                                    <td>5</td>
+                                    <td>3</td>
+                                    <td></td>
+                                    <td>25/12/2025 12:55:06</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-weight: 900;">X</td>
+                                    <td>INT13162</td>
+                                    <td>Lập trình với Python</td>
+                                    <td>7</td>
+                                    <td>3</td>
+                                    <td></td>
+                                    <td>25/12/2025 12:55:08</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-weight: 900;">X</td>
+                                    <td>INT1450</td>
+                                    <td>Quản lý dự án phần mềm</td>
+                                    <td>6</td>
+                                    <td>2</td>
+                                    <td></td>
+                                    <td>25/12/2025 12:55:17</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-weight: 900;">X</td>
+                                    <td>INT1340</td>
+                                    <td>Nhập môn công nghệ phần mềm</td>
+                                    <td>7</td>
+                                    <td>3</td>
+                                    <td></td>
+                                    <td>25/12/2025 12:55:19</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-weight: 900;">X</td>
+                                    <td>BAS1105</td>
+                                    <td>Giáo dục Quốc phòng</td>
+                                    <td>1</td>
+                                    <td>7.5</td>
+                                    <td></td>
+                                    <td>16/03/2026 14:08:25</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                     </div>
+                     
+                     <!-- -----XONG BẢNG 2---------- -->
+
+                    <br><br>
+                    <!-- Bảng 2 -->
+                     <h3>Danh sách môn học đã đăng ký: <span class="dangky-course">5 môn, 12 tín chỉ</span></h3>
+                     <div class="table-wrapper">
+                        <table class="course-table">
+                            <thead>
+                                <tr>
+                                    <th style="width: 40px;">Xóa</th>
+                                    <th>Mã MH <i class="fa-solid fa-sort"></i></th>
+                                    <th>Tên môn học</th>
+                                    <th>Nhóm tổ</th>
+                                    <th>Số TC</th>
+                                    <th>Lớp</th>
+                                    <th>Ngày đăng ký</th>
+                                    <th>Trạng thái</th>
+                                    <th>Thời khóa biểu</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- DANH SÁCH CÁC MÔN HỌC -->
+                                <tr>
+                                    <td style="font-weight: 900;">X</td>
+                                    <td>BAS1143</td>
+                                    <td>Tiếng Anh A13</td>
+                                    <td>6</td>
+                                    <td>3</td>
+                                    <td></td>
+                                    <td>25/03/2025 12:54:24</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-weight: 900;">X</td>
+                                    <td>INT1356</td>
+                                    <td>Lập trình JavaScript</td>
+                                    <td>5</td>
+                                    <td>3</td>
+                                    <td></td>
+                                    <td>25/03/2025 12:55:06</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-weight: 900;">X</td>
+                                    <td>INT13167</td>
+                                    <td>Lập trình Web với HTML và CSS</td>
+                                    <td>5</td>
+                                    <td>2</td>
+                                    <td></td>
+                                    <td>25/03/2025 12:55:08</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-weight: 900;">X</td>
+                                    <td>INT1455</td>
+                                    <td>Lập trình quản lý dữ liệu SQL</td>
+                                    <td>8</td>
+                                    <td>2</td>
+                                    <td></td>
+                                    <td>25/03/2025 12:55:17</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-weight: 900;">X</td>
+                                    <td>INT1347</td>
+                                    <td>Nhập môn công nghệ thông tin</td>
+                                    <td>4</td>
+                                    <td>2</td>
+                                    <td></td>
+                                    <td>25/03/2025 12:55:19</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                     </div>
+
+                     <!-- Xong bảng 3 -->
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Footer -->
+         <footer class="footer-right">
+            <div class="footer-container">
+                <div class="footer-col info-col">
+                    <h3>Học viện Công nghệ Bưu chính Viễn thông</h3>
+                    <p style="color: rgb(126, 23, 23)">Cơ sở đào tạo phía Bắc: Ngõ 33 Đại Mỗ, P. Đại Mỗ, Tp Hà Nội. Hotline: 0889.808.086; Email: dhtx@ptit.edu.vn</p>
+                    <p style="color: rgb(126, 23, 23)">Cơ sở đào tạo phía Nam: Số 11 Nguyễn Đình Chiểu, P. Sài Gòn, Tp.HCM. Hotline: 0888.558.055; Email: pttc_hcm@ptit.edu.vn</p>
+                </div>
+
+                <div class="footer-col link-col stats-col">
+                    <h3>Liên kết nhanh</h3>
+                    <ul>
+                        <li><a href="#" style="color: rgb(126, 23, 23)">Hệ đại học từ xa - Học viện Công nghệ Bưu chính Viễn thông</a></li>
+                        <li><a href="#" style="color: rgb(126, 23, 23)">Fanpage Sinh viên đại học từ xa</a></li>
+                        <li><a href="#" style="color: rgb(126, 23, 23)">Trung tâm Đào tạo Bưu chính Viễn thông</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col stats-col">
+                    <h3>THỐNG KÊ TRUY CẬP</h3>
+                    <div class="stat-item">
+                        <span class="stat-label"><i class="fa-solid fa-users"></i> Đang truy cập</span>
+                        <span class="stat-count">120</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label"><i class="fa-solid fa-user-graduate"></i> SV đăng nhập</span>
+                        <span class="stat-count">117</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label"><i class="fa-solid fa-user-tie"></i> GV đăng nhập</span>
+                        <span class="stat-count">2</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/trangchu.js"></script>
+</body>
+</html>

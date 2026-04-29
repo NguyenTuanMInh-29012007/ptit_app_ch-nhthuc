@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý đào tạo</title>
+    <link rel="stylesheet" href="../css/hocphi.css">
+</head>
+<body>
+    <div class="container-left">
+        <section class="header">
+            <div class="nav-links">
+                <a href="#" class="btn-link"><button>LMS</button></a>
+                <a href="#" class="btn-link"><button>Thư viện số</button></a>
+                <a href="#" class="btn-link"><button>Cổng thực hành</button></a>
+                <a href="#" class="btn-link"><button>Quy chế</button></a>
+                <a href="#" class="btn-link"><button>Thông báo</button></a>
+                <a href="#" class="btn-link"><button>Biểu mẫu - Hướng dẫn</button></a>
+                <a href="#" class="btn-link"><button>Học phí</button></a>
+            </div>
+
+            <div class="nick">
+                <img class="img-nick" src="../img/icon-nick.png" alt="Avatar">
+                <div class="nick-name">
+                    <span class="studentName">Nguyễn Tuấn Minh</span>
+                    <span class="studentCode">B25DTCN188</span>
+                </div>
+                <span class="icons">▼</span>
+            </div>
+
+            <div class="user-dropdown" id="userDropdown">
+                <p class="studentNameDropdown"></p>
+                <p class="studentCodeDropdown"></p>
+            </div>
+        </section>
+        
+        <!-- box-left -->
+        <section class="box-left">
+                <a href="/html/trangchu.html" class="page-link"><div class="content-main">
+                    <span class="content">Trang chủ</span>
+                </div></a>
+
+            <!-- Phần khi Log-in -->
+            <nav class="sidebar-menu" id="sidebar-menu" style="display:block">
+                <ul>
+                    <li class="thongbao"><a href="/html/thongbao.html" >Thông báo từ ban quản trị</a></li>
+                    <li><a href="/html/dangky.html">Đăng ký môn học</a></li>
+                    <li class="hocphi"><a href="/html/hocphi.html" >Xem học phí</a></li>
+                    <li><a href="">Hóa đơn điện tử</a></li>
+                    <li><a href="">Thời khóa biểu dạng tuần</a></li>
+                    <li><a href="">Thời khóa biểu dạng học kỳ</a></li>
+                    <li><a href="">Xem lịch thi</a></li>
+                    <li><a href="/html/xemdiem.html">Xem điểm</a></li>
+                    <li><a href="">Gửi ý kiến</a></li>
+                </ul>
+            </nav>
+
+            <div class="box-footer">
+                <img class="img-pttc" src="../img/pttc.png">
+                <p>VTT1-V 2026.03D.00</p>
+                <p>Design by <a href="https://aqtech.edu.vn/" class="link-aqtech">aqtech.vn</a></p>
+            </div>
+        </section>
+    </div>
+
+    <div class="box-left-login">
+
+    </div>
+    
+
+    <!-- CONTAINER RIGHT -->
+    <div class="container-right">
+        
+<!-- -HỌC PHÍ---------------------------------------- -->
+        <div class="fee-wrapper">
+            <div class="reg-header">
+                <p class="fa-solid fa-gear">XEM HỌC PHÍ</p> 
+            </div>
+
+            <div class="fee-content">
+                <div class="fee-toolbar">
+                    <select class="form-control" style="width: auto;">
+                        <option>Tổng hợp học phí tất cả học kỳ</option>
+                    </select>
+                    <div class="action-buttons">
+                        <button class="btn-action"><i class="fa-solid fa-print"></i> In</button>
+                        <button class="btn-action"><i class="fa-solid fa-file-excel"></i> Xuất Excel</button>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <table class="fee-table">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Niên học kỳ</th>
+                                <th>HP chưa giảm</th>
+                                <th>Miễn giảm</th>
+                                <th>Phải thu</th>
+                                <th>Đã thu</th>
+                                <th>Còn nợ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="section-row">
+                                <td colspan="7">Học phí</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Học kỳ 1 - Năm học 2025 - 2026</td>
+                                <td>9,000,000</td>
+                                <td>0</td>
+                                <td>9,000,000</td>
+                                <td>9,000,000</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Học kỳ 2 - Năm học 2025 - 2026</td>
+                                <td>11,250,000</td>
+                                <td>0</td>
+                                <td>11,250,000</td>
+                                <td>11,250,000</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Học kỳ 3 - Năm học 2025 - 2026</td>
+                                <td>9,600,000</td>
+                                <td>0</td>
+                                <td>9,600,000</td>
+                                <td>0</td>
+                                <td>9,600,000</td>
+                            </tr>
+                            <tr class="total-row">
+                                <td colspan="2" style="text-align: right;">TỔNG</td>
+                                <td>29,850,000</td>
+                                <td>0</td>
+                                <td>29,850,000</td>
+                                <td>20,250,000</td>
+                                <td>9,600,000</td>
+                            </tr>
+                            <tr class="grand-total-row">
+                                <td colspan="2" style="text-align: right;">TỔNG CỘNG</td>
+                                <td>29,850,000</td>
+                                <td>0</td>
+                                <td>29,850,000</td>
+                                <td>20,250,000</td>
+                                <td>9,600,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+         <footer class="footer-right">
+            <div class="footer-container">
+                <div class="footer-col info-col">
+                    <h3>Học viện Công nghệ Bưu chính Viễn thông</h3>
+                    <p style="color: rgb(126, 23, 23)">Cơ sở đào tạo phía Bắc: Ngõ 33 Đại Mỗ, P. Đại Mỗ, Tp Hà Nội. Hotline: 0889.808.086; Email: dhtx@ptit.edu.vn</p>
+                    <p style="color: rgb(126, 23, 23)">Cơ sở đào tạo phía Nam: Số 11 Nguyễn Đình Chiểu, P. Sài Gòn, Tp.HCM. Hotline: 0888.558.055; Email: pttc_hcm@ptit.edu.vn</p>
+                </div>
+
+                <div class="footer-col link-col stats-col">
+                    <h3>Liên kết nhanh</h3>
+                    <ul>
+                        <li><a href="#" style="color: rgb(126, 23, 23)">Hệ đại học từ xa - Học viện Công nghệ Bưu chính Viễn thông</a></li>
+                        <li><a href="#" style="color: rgb(126, 23, 23)">Fanpage Sinh viên đại học từ xa</a></li>
+                        <li><a href="#" style="color: rgb(126, 23, 23)">Trung tâm Đào tạo Bưu chính Viễn thông</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col stats-col">
+                    <h3>THỐNG KÊ TRUY CẬP</h3>
+                    <div class="stat-item">
+                        <span class="stat-label"><i class="fa-solid fa-users"></i> Đang truy cập</span>
+                        <span class="stat-count">120</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label"><i class="fa-solid fa-user-graduate"></i> SV đăng nhập</span>
+                        <span class="stat-count">117</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label"><i class="fa-solid fa-user-tie"></i> GV đăng nhập</span>
+                        <span class="stat-count">2</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/trangchu.js"></script>
+</body>
+</html>

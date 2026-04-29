@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý đào tạo</title>
+    <link rel="stylesheet" href="../css/xemdiem.css">
+</head>
+<body>
+    <div class="container-left">
+        <section class="header">
+            <div class="nav-links">
+                <a href="#" class="btn-link"><button>LMS</button></a>
+                <a href="#" class="btn-link"><button>Thư viện số</button></a>
+                <a href="#" class="btn-link"><button>Cổng thực hành</button></a>
+                <a href="#" class="btn-link"><button>Quy chế</button></a>
+                <a href="#" class="btn-link"><button>Thông báo</button></a>
+                <a href="#" class="btn-link"><button>Biểu mẫu - Hướng dẫn</button></a>
+                <a href="#" class="btn-link"><button>Học phí</button></a>
+            </div>
+
+            <div class="nick">
+                <img class="img-nick" src="../img/icon-nick.png" alt="Avatar">
+                <div class="nick-name">
+                    <span class="studentName">Nguyễn Tuấn Minh</span>
+                    <span class="studentCode">B25DTCN188</span>
+                </div>
+                <span class="icons">▼</span>
+            </div>
+
+            <div class="user-dropdown" id="userDropdown">
+                <p class="studentNameDropdown"></p>
+                <p class="studentCodeDropdown"></p>
+            </div>
+        </section>
+        
+        <!-- box-left -->
+        <section class="box-left">
+                <a href="/html/trangchu.html" class="page-link"><div class="content-main">
+                    <span class="content">Trang chủ</span>
+                </div></a>
+
+            <!-- Phần khi Log-in -->
+            <nav class="sidebar-menu" id="sidebar-menu" style="display:block">
+                <ul>
+                    <li class="thongbao"><a href="/html/thongbao.html" >Thông báo từ ban quản trị</a></li>
+                    <li><a href="/html/dangky.html" >Đăng ký môn học</a></li>
+                    <li class="hocphi"><a href="/html/hocphi.html" >Xem học phí</a></li>
+                    <li><a href="">Hóa đơn điện tử</a></li>
+                    <li><a href="">Thời khóa biểu dạng tuần</a></li>
+                    <li><a href="">Thời khóa biểu dạng học kỳ</a></li>
+                    <li><a href="">Xem lịch thi</a></li>
+                    <li class="xemdiem"><a href="/html/xemdiem.html" >Xem điểm</a></li>
+                    <li><a href="">Gửi ý kiến</a></li>
+                </ul>
+            </nav>
+
+            <div class="box-footer">
+                <img class="img-pttc" src="../img/pttc.png">
+                <p>VTT1-V 2026.03D.00</p>
+                <p>Design by <a href="https://aqtech.edu.vn/" class="link-aqtech">aqtech.vn</a></p>
+            </div>
+        </section>
+    </div>
+
+    <div class="box-left-login">
+
+    </div>
+    
+
+    <!-- CONTAINER RIGHT -->
+    <div class="container-right">
+        
+        <div class="grade-wrapper">
+            <div class="reg-header">
+                <p class="fa-solid fa-gear">XEM ĐIỂM</p> 
+            </div>
+
+            <div class="grade-content">
+
+                <div class="table-wrapper">
+                    <table class="grade-table">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Mã MH</th>
+                                <th>Nhóm/tổ môn học</th>
+                                <th>Tên môn học</th>
+                                <th>Số tín chỉ</th>
+                                <th>Điểm thi</th>
+                                <th>Điểm TK (10)</th>
+                                <th>Điểm TK (4)</th>
+                                <th>Điểm TK (C)</th>
+                                <th>Kết quả</th>
+                                <th>Chi tiết</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="semester-row"><td colspan="11">Học kỳ 3 - Năm học 2025 - 2026</td></tr>
+                            <tr>
+                                <td>1</td><td>BAS1143</td><td>06</td><td>Tiếng Anh A13</td><td>3</td><td>9</td><td>8.2</td><td>8.5</td><td>7.8</td><td style="color:brown; font-weight: 700;">X</td><td><i class="fa-solid fa-xmark"></i></td>                              
+                            </tr>
+                            <tr>
+                                <td>2</td><td>INT1356</td><td>05</td><td>Lập trình JavaScript</td><td>3</td><td>8.5</td><td>10</td><td>8.4</td><td>9.3</td><td style="color:brown; font-weight: 700;">X</td><td><i class="fa-solid fa-xmark"></i></td>
+                            </tr>
+                            <tr>
+                                <td>3</td><td>INT13167</td><td>05</td><td>Lập trình Web với HTML và CSS</td><td>2</td><td>8.7</td><td>9</td><td>9.2</td><td>9.8</td><td style="color:brown; font-weight: 700;">X</td><td><i class="fa-solid fa-xmark"></i></td>
+                            </tr>
+                            <tr>
+                                <td>4</td><td>INT1455</td><td>08</td><td>Lập trình quản lý dữ liệu SQL</td><td>2</td><td>8</td><td>8.5</td><td>9</td><td>8.7</td><td style="color:brown; font-weight: 700;">X</td><td><i class="fa-solid fa-xmark"></i></td>
+                            </tr>
+                            <tr>
+                                <td>5</td><td>INT1340</td><td>04</td><td>Nhập môn công nghệ thông tin</td><td>2</td><td>10</td><td>9.5</td><td>8.7</td><td>9.2</td><td style="color:brown; font-weight: 700;">X</td><td><i class="fa-solid fa-xmark"></i></td>
+                            </tr>
+                            <tr class="summary-row">
+                                <td colspan="11">
+                                    <div class="summary-info">
+                                        <span>- Điểm trung bình học kỳ hệ 4:</span>
+                                        <span>- Điểm trung bình tích lũy hệ 4:</span>
+                                        <span>- Điểm trung bình học kỳ hệ 10:</span>
+                                        <span>- Điểm trung bình tích lũy hệ 10:</span>
+                                        <span>- Số tín chỉ đạt học kỳ:</span>
+                                        <span>- Số tín chỉ tích lũy: <strong>0</strong></span>
+                                    </div>
+                                </td>
+                            </tr>
+
+
+                            <tr class="semester-row"><td colspan="11">Học kỳ 2 - Năm học 2025 - 2026</td></tr>
+                            <tr>
+                                <td>1</td><td>BAS1105</td><td>01</td><td>Giáo dục Quốc phòng</td><td>7.5</td><td>10</td><td>9</td><td>9.5</td><td>9.7</td><td style="color:brown; font-weight: 700;">X</td><td><i class="fa-solid fa-xmark"></i></td>                              
+                            </tr>
+                            <tr>
+                                <td>2</td><td>BAS1142</td><td>06</td><td>Tiếng Anh A12</td><td>4</td><td>7.8</td><td>8.2</td><td>8.5</td><td>8.5</td><td style="color:brown; font-weight: 700;">X</td><td><i class="fa-solid fa-xmark"></i></td>
+                            </tr>
+                            <tr>
+                                <td>3</td><td>INT1313</td><td>05</td><td>Cơ sở dữ liệu</td><td>3</td><td>8</td><td>8.8</td><td>8.3</td><td>9</td><td style="color:brown; font-weight: 700;">X</td><td><i class="fa-solid fa-xmark"></i></td>
+                            </tr>
+                            <tr>
+                                <td>4</td><td>INT3162</td><td>07</td><td>Lập trình với Python</td><td>3</td><td>8.8</td><td>9</td><td>9.2</td><td>9</td><td style="color:brown; font-weight: 700;">X</td><td><i class="fa-solid fa-xmark"></i></td>
+                            </tr>
+                            <tr>
+                                <td>5</td><td>INT1340</td><td>07</td><td>Nhập môn công nghệ phần mềm</td><td>3</td><td>9.2</td><td>9</td><td>9</td><td>9.5</td><td style="color:brown; font-weight: 700;">X</td><td><i class="fa-solid fa-xmark"></i></td>
+                            </tr>
+                            <tr>
+                                <td>6</td><td>INT1450</td><td>06</td><td>Quản lý dự án phần mềm</td><td>2</td><td>8</td><td>8.4</td><td>8.8</td><td>9</td><td style="color:brown; font-weight: 700;">X</td><td><i class="fa-solid fa-xmark"></i></td>
+                            </tr>
+                            <tr class="summary-row">
+                                <td colspan="11">
+                                    <div class="summary-info">
+                                        <span>- Điểm trung bình học kỳ hệ 4:</span>
+                                        <span>- Điểm trung bình tích lũy hệ 4:</span>
+                                        <span>- Điểm trung bình học kỳ hệ 10:</span>
+                                        <span>- Điểm trung bình tích lũy hệ 10:</span>
+                                        <span>- Số tín chỉ đạt học kỳ:</span>
+                                        <span>- Số tín chỉ tích lũy: <strong>0</strong></span>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="semester-row"><td colspan="11">Học kỳ 1 - Năm học 2025 - 2026</td></tr>
+                            <tr>
+                                <td>1</td><td>BAS1141</td><td>08</td><td>Tiếng Anh A11</td><td>3</td><td>8</td><td>7.8</td><td>8.5</td><td>8.8</td><td style="color:brown; font-weight: 700;">X</td><td><i class="fa-solid fa-xmark"></i></td>
+                            </tr>
+                            <tr>
+                                <td>2</td><td>INT11176</td><td>05</td><td>Nhập môn Internet và eLearning</td><td>2</td><td>9</td><td>9.2</td><td>10</td><td>9.5</td><td style="color:brown; font-weight: 700;">X</td><td><i class="fa-solid fa-xmark"></i></td>
+                            </tr>
+                            <tr>
+                                <td>3</td><td>INT1154</td><td>04</td><td>Tin học cơ sở 1</td><td>2</td><td>8.2</td><td>8.5</td><td>9</td><td>9.2</td><td style="color:brown; font-weight: 700;">X</td><td><i class="fa-solid fa-xmark"></i></td>
+                            </tr>
+                            <tr>
+                                <td>4</td><td>INT1155</td><td>07</td><td>Tin học cơ sở 2</td><td>2</td><td>8.8</td><td>8.2</td><td>8.5</td><td>9</td><td style="color:brown; font-weight: 700;">X</td><td><i class="fa-solid fa-xmark"></i></td>
+                            </tr>
+                            <tr>
+                                <td>5</td><td>INT1336</td><td>06</td><td>Mạng máy tính</td><td>3</td><td>9</td><td>9.2</td><td>8.8</td><td>9</td><td style="color:brown; font-weight: 700;">X</td><td><i class="fa-solid fa-xmark"></i></td>
+                            </tr>
+                            <tr>
+                                <td>6</td><td>INT1339</td><td>06</td><td>Ngôn ngữ lập trình C++</td><td>3</td><td>7.8</td><td>8</td><td>8.5</td><td>8.8</td><td style="color:brown; font-weight: 700;">X</td><td><i class="fa-solid fa-xmark"></i></td>
+                            </tr>
+                            <tr>
+                                <td>7</td><td>SKD1101</td><td>07</td><td>Kỹ năng thuyết trình</td><td>1</td><td>8.8</td><td>8.5</td><td>9</td><td>9.2</td><td style="color:brown; font-weight: 700;">X</td><td><i class="fa-solid fa-xmark"></i></td>
+                            </tr>
+                            <tr>
+                                <td>8</td><td>SKD1102</td><td>05</td><td>Kỹ năng làm việc nhóm</td><td>1</td><td>9.5</td><td>9.2</td><td>9</td><td>10</td><td style="color:brown; font-weight: 700;">X</td><td><i class="fa-solid fa-xmark"></i></td>
+                            </tr>
+                            <tr>
+                                <td>9</td><td>SKD1103</td><td>10</td><td>Kỹ năng tạo lập văn bản</td><td>1</td><td>10</td><td>9.5</td><td>9</td><td>9.2</td><td style="color:brown; font-weight: 700;">X</td><td><i class="fa-solid fa-xmark"></i></td>
+                            </tr>
+                            <tr class="summary-row">
+                                <td colspan="11">
+                                    <div class="summary-info">
+                                        <span>- Điểm trung bình học kỳ hệ 4:</span>
+                                        <span>- Điểm trung bình tích lũy hệ 4:</span>
+                                        <span>- Điểm trung bình học kỳ hệ 10:</span>
+                                        <span>- Điểm trung bình tích lũy hệ 10:</span>
+                                        <span>- Số tín chỉ đạt học kỳ:</span>
+                                        <span>- Số tín chỉ tích lũy: <strong>0</strong></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+         <footer class="footer-right">
+            <div class="footer-container">
+                <div class="footer-col info-col">
+                    <h3>Học viện Công nghệ Bưu chính Viễn thông</h3>
+                    <p style="color: rgb(126, 23, 23)">Cơ sở đào tạo phía Bắc: Ngõ 33 Đại Mỗ, P. Đại Mỗ, Tp Hà Nội. Hotline: 0889.808.086; Email: dhtx@ptit.edu.vn</p>
+                    <p style="color: rgb(126, 23, 23)">Cơ sở đào tạo phía Nam: Số 11 Nguyễn Đình Chiểu, P. Sài Gòn, Tp.HCM. Hotline: 0888.558.055; Email: pttc_hcm@ptit.edu.vn</p>
+                </div>
+
+                <div class="footer-col link-col stats-col">
+                    <h3>Liên kết nhanh</h3>
+                    <ul>
+                        <li><a href="#" style="color: rgb(126, 23, 23)">Hệ đại học từ xa - Học viện Công nghệ Bưu chính Viễn thông</a></li>
+                        <li><a href="#" style="color: rgb(126, 23, 23)">Fanpage Sinh viên đại học từ xa</a></li>
+                        <li><a href="#" style="color: rgb(126, 23, 23)">Trung tâm Đào tạo Bưu chính Viễn thông</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col stats-col">
+                    <h3>THỐNG KÊ TRUY CẬP</h3>
+                    <div class="stat-item">
+                        <span class="stat-label"><i class="fa-solid fa-users"></i> Đang truy cập</span>
+                        <span class="stat-count">120</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label"><i class="fa-solid fa-user-graduate"></i> SV đăng nhập</span>
+                        <span class="stat-count">117</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label"><i class="fa-solid fa-user-tie"></i> GV đăng nhập</span>
+                        <span class="stat-count">2</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/trangchu.js"></script>
+</body>
+</html>
